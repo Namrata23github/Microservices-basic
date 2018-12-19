@@ -1,0 +1,16 @@
+package com.morningstar.service.impl;
+
+import com.morningstar.entity.Customer;
+import com.morningstar.repository.CustomerRepository;
+import com.morningstar.service.CustomerService;
+
+public class CustomerServiceImpl implements CustomerService {
+
+	CustomerRepository customeRepository;
+	@Override
+	public Customer saveCustomer(Customer customer) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

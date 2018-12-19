@@ -1,0 +1,68 @@
+package com.morningstar.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Entity
+@Table (name = "customer", schema="schema_mono_shopping")
+@Data 
+public class Customer {
+
+	public Customer(Long id, String name, String mobileNumber) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.mobileNumber = mobileNumber;
+	}
+
+	@Id @GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	
+	@Column(name="customer_name")
+	private String name;
+	
+	private String mobileNumber;
+
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", name=" + name + ", mobileNumber=" + mobileNumber + "]";
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getMobileNumber() {
+		return mobileNumber;
+	}
+
+	public void setMobileNumber(String mobileNumber) {
+		this.mobileNumber = mobileNumber;
+	}
+
+	public Customer() {
+		super();
+	}
+	
+	
+	
+	
+}

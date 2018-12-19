@@ -1,0 +1,10 @@
+package com.morningstar.service;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.morningstar.entity.Customer;
+
+public interface CustomerService  {
+	public Customer saveCustomer(Customer  customer)
+
+}

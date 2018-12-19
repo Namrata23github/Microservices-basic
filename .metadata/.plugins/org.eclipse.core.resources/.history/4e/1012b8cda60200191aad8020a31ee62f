@@ -1,0 +1,6 @@
+package com.morningstar.entity;
+
+@Entity
+public class Customer {
+
+}
