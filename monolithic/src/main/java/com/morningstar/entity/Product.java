@@ -60,4 +60,10 @@ public class Product {
 		this.productName = productName;
 	}
 
+
+	public void setOrders(Orders orders2) {
+		// TODO Auto-generated method stub
+		orders = orders2;
+	}
+
 }

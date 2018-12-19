@@ -53,4 +53,19 @@ public class Orders {
 		prod.setOrders(null);
 	}
 
+	public void setOrderName(String string) {
+		// TODO Auto-generated method stub
+		orderName = string;
+	}
+
+	public void setProductList(List<Product> productList2) {
+		// TODO Auto-generated method stub
+		productList = productList2;
+	}
+
+	public void setCustomer(Customer customer2) {
+		// TODO Auto-generated method stub
+		customer = customer2;
+	}
+
 }

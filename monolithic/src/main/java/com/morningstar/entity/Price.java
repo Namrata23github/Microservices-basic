@@ -53,5 +53,12 @@ public class Price {
 		super();
 		this.mrp = mrp;
 		this.discount = discount;
+		this.setPayableAmount();
+	}
+
+
+	public void setProduct(Product product2) {
+		// TODO Auto-generated method stub
+		product = product2;
 	}
 }
